@@ -22,6 +22,9 @@ Centroid decomp [has LCA] <br/>
 Biconnected and components <br/>
 Min cost max flow <br/>
 Treap <br/>
+Dinic <br/>
+Edmond Karp <br/>
+Hopcroft <br/>
 
 ## Trees
 LCA <br/>
