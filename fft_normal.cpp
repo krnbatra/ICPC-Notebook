@@ -1,16 +1,4 @@
 /* fft normal */
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long int ll ;
-
-#define pb     push_back
-#define mp     make_pair
-#define all(v) v.begin() , v.end()
-#define allr(v) v.rbegin(), v.rend()
-const ll INF =  0x3f3f3f3f3f3f3f3f;
-const int MOD = 1e9+7;
-// const int MAX = 1e5+5;
-
 //2^ceil(log2(x)) where x = Maximum size of Polynomial
 const int MAX = 131100;
 

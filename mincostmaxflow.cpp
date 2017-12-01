@@ -1,16 +1,6 @@
 /* min cost max flow */
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <set>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <map>
 #include <tr1/unordered_map>
 #include <tr1/unordered_set>
-#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>

@@ -1,9 +1,4 @@
 /* Centroid Decomposition */
-#define pb     push_back
-#define mp     make_pair
-#define all(v) v.begin() , v.end()
-#define allr(v) v.rbegin(), v.rend()
-#define forc(c,it) for(__typeof(c.begin()) it = c.begin(); it != c.end(); it++)
 template<typename T, template<typename ELEM, typename ALLOC=std::allocator<ELEM> > class Container>
 std::ostream& operator<< (std::ostream& o, const Container<T>& container)
 { typename Container<T>::const_iterator beg = container.begin();

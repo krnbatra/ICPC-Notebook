@@ -1,14 +1,4 @@
 /* fft mod */
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long int ll ;
-
-#define pb     push_back
-#define mp     make_pair
-#define all(v) v.begin() , v.end()
-#define allr(v) v.rbegin(), v.rend()
-const ll INF =  0x3f3f3f3f3f3f3f3f;
-
 const int MAX = 2e5 + 5;
 const int MOD = 1e9 + 7;
 

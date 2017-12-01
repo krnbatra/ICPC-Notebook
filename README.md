@@ -27,7 +27,7 @@ Treap <br/>
 LCA <br/>
 
 # Searching
-Ternary
+Ternary <br/>
 
 # Strings
 KMP <br/>

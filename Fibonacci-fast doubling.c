@@ -1,8 +1,4 @@
 /* fibo fast doubling */
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 const int MAX=1e5;
 int fibo[100001];
 int M;
