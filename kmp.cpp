@@ -1,20 +1,4 @@
-#include <bits/stdc++.h>
- using namespace std;
-typedef long long int ll ;
-typedef long double ld;
-
-#define MOD 1000000007ll
-
-#define all(v) v.begin() , v.end()
-#define allr(v) v.rbegin(), v.rend()
-#define for0(i,n) for(__typeof(n) i = 0; i < n ; i++) 
-#define forab(i,a,b) for(__typeof(a) i = a ; i < b ; i++) 
-#define forba(i,b,a) for(__typeof(a) i = b ; i > a ; i--) 
-#define forc(c,it) for(__typeof(c.begin()) it = c.begin(); it != c.end(); it++)
-#define pb     push_back
-#define mp     make_pair
-#define MAX 100005
-
+/* KMP */
 string text;
 string pattern;
 int tsize, psize;

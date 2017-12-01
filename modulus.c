@@ -1,3 +1,4 @@
+/* modulus */
 /*Trick #1: (A / B) % MOD = (A % (MOD * B)) / B
 
 Conditions: none.

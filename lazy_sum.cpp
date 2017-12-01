@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* lazy segtree */
 const int MAXN = 1e5+5; 
 int n;
 int tree[4*MAXN], arr[MAXN], lazy[4*MAXN];
@@ -75,10 +68,4 @@ int query_lazy(int node, int start, int end,int l, int r){
 	int mid = (start + end) >> 1;
 
 	return query_lazy(left, start, mid, l, r) + query_lazy(right, mid + 1, end, l, r);
-}
-
-int main(){
-    io;
-     
-	return 0;   
 }

@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* RU_RQ */
 const int MAXN = 1e3+5;
 int BIT[2][MAXN];
  
@@ -38,11 +31,4 @@ int query(int idx){
  
 int queryRange(int l, int r){
     return query(r)-query(l-1);
-}
-
-int main(){
-    io;
-    udpateRange(2, 4, 2);
-    cout << queryRange(2, 3) << endl;
-    return 0;
 }

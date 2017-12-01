@@ -1,3 +1,4 @@
+/* suffix automaton */
 struct SuffixAutomaton { // can be used for LCS and others
     struct State {
         int depth, id;

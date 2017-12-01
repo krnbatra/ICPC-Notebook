@@ -1,13 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* running median */
 int main(){
-	io;
 	// if even numbers then lower one is median
 	int n;
 	cin >> n;
@@ -41,5 +33,4 @@ int main(){
 		}
 	}
 	cout << lowers.top() << endl;
-	return 0;
 }

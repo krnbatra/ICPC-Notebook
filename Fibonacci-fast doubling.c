@@ -1,3 +1,4 @@
+/* fibo fast doubling */
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -37,7 +38,6 @@ inline int fibi(int n) {
 }
 int main() {
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
     int N,i;
     scanf("%d%d",&N,&M);
     int A[N];

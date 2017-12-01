@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* sparse table */
 const int MAXN = 1e5+5;
 const int LG = log2(MAXN) + 1;
 int sparse_table[LG][MAXN];
@@ -34,19 +27,6 @@ int query(int left, int right){
     int k = log2(range);
     return min(A[sparse_table[k][left]], A[sparse_table[k][right - (1 << k) + 1]]);
 }
-
 int main(){
-    io;
-    cin >> n;
-    for(int i = 0;i < n; i++)
-        cin >> A[i];
     preprocess();
-    int q;
-    cin >> q;
-    while(q--){
-        int l, r;
-        cin >> l >> r;
-        cout << query(l, r) << endl;
-    }
-    return 0;
 }

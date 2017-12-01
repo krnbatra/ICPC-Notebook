@@ -1,13 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
-const int MAXN = 1e5+5;
-
+/* manachar */
 int P[MAXN*2];
 
 string convert(const string &s){
@@ -34,12 +25,4 @@ int lps(const string &s){
         }
     }
     return *max_element(P, P+str.size()-1);
-}
-
-int main(){
-    io;
-    string s;
-    cin >> s;
-    cout << lps(s) << endl;
-    return 0;
 }

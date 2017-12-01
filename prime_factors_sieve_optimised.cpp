@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-typedef long long ll;
-using namespace std;
-#define pb push_back
+/* prime factors using sieve */
 const int MAXN = 1e6+5;
 int minPrime[MAXN];	
 void sieve(){
@@ -29,11 +26,4 @@ void factorise(int n){
 		factors.pb(minPrime[n]);
 		n/=minPrime[n];
 	}
-}
-
-int main(){
-	factorise(12);
-	for(auto i : factors)
-		cout << i << endl;
-	return 0;
 }

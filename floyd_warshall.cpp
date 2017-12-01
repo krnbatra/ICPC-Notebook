@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-
+/* floyd warshall */ 
 int dist[1000][1000];
 int weight[1000][1000];
 int n;
@@ -18,10 +15,4 @@ void floyd_warshall(){
 			}
 		}
 	}
-}
-
-int main(){
-    io;
-	    
-    return 0;
 }

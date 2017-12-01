@@ -1,3 +1,4 @@
+/* math stuff */
 typedef long long LL;
 
 // compute nth fibonacci number modulo m in O(log n)

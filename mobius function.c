@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* mobius func */
 int num=359999;
 int spf[359999],mob[359999],freq[359999],X[1000];
 int mod=1e9+7;
@@ -27,7 +27,6 @@ void pre()
     }
 }
 int main(void) {
-	// your code goes here
 	int i,j,k,T,N;
 	pre();
 	scanf("%d",&T);

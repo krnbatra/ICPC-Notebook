@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <math.h>
+/* circumc */
 #define EPS 1e-9
 struct point {double x,y;};
 typedef struct point point;

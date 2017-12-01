@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* lca */
 const int MAXN = 1e5+5;
 const int LG = log2(MAXN) + 1;
 
@@ -51,19 +44,4 @@ int kth(int n, int k){
 			n = par[n][i];
 	}
 	return n;
-}
-
-int main(){
-    io;
-    cin >> n;
-    for(int i = 0;i < n-1; i++){
-    	int a, b;
-    	cin >> a >> b;
-    	adj[a].push_back(b);
-    	adj[b].push_back(a);
-    }
-    memset(par, -1, sizeof par);
-    dfs(1);
-    cout << lca(1, 3) << endl;
-    return 0;
 }

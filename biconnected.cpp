@@ -1,10 +1,4 @@
-#include <bits/stdc++.h>
- using namespace std;
-typedef long long int ll ;
-typedef long double ld;
-
-#define MOD 1000000007ll
-
+/* biconnected */
 #define all(v) v.begin() , v.end()
 #define allr(v) v.rbegin(), v.rend()
 #define for0(i,n) for(__typeof(n) i = 0; i < n ; i++) 

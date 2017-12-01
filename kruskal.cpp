@@ -1,15 +1,8 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* kruskal */
 const int MAXN = 1e5+5;
 int parent[MAXN], n, m;
 pair<ll, pair<int, int> > table[MAXN];	// table stores <ll, pair of ints>, weight and in between what n the edge is. 
-
+// table[i] = {weight, {x, y}};
 void init(){
 	for(int i = 1;i <= n; i++){
 		parent[i] = i;
@@ -43,20 +36,4 @@ ll kruskal(){
 		}
 	}
 	return minCost;
-}
-
-int main(){
-	io;
-	cin >> n >> m;
-	init();
-	for(int i = 0;i < m; i++){
-		int x, y;
-		ll weight;
-		cin >> x >> y >> weight;
-		table[i] = {weight, {x, y}};
-	}
-	sort(table, table+m);
-	ll minCost = kruskal();
-	cout << minCost << endl;
-	return 0;
 }

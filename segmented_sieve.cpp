@@ -1,8 +1,4 @@
-#include <bits/stdc++.h>
-typedef long long ll;
-using namespace std;
-#define pb push_back
-
+/* segmented sieve */
 const int MAXN = 1e6;
 vector<int> primes;
 int isPrime[MAXN];	//isPrime[i] = 0 indicates i is prime. 
@@ -21,7 +17,6 @@ void sieve(){
 		}
 	}
 }
-
 const int SIZE = (int)1e6+1; 	//define size to be max(B-A+1)
 int arr[SIZE];
 void segmentedSieve(int a, int b){
@@ -43,10 +38,4 @@ void segmentedSieve(int a, int b){
 			pi(i);
 	}
 	return;
-}
-
-
-int main(){
-	
-	return 0;
 }

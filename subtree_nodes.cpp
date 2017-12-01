@@ -1,15 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long int ll ;
-
-#define pb     push_back
-#define mp     make_pair
-#define all(v) v.begin() , v.end()
-#define allr(v) v.rbegin(), v.rend()
-#define forc(c,it) for(__typeof(c.begin()) it = c.begin(); it != c.end(); it++)
-const int MOD = 1e9+7;
-const int MAX = 1e5+5;
-
+/* subtree nodes */
 int n, a, b;
 vector<int> adj[MAX];
 vector<int> discovery;
@@ -30,19 +19,6 @@ void dfs(int s, int p){
 
 int main(int argc, char const *argv[])
 {
-  ios_base::sync_with_stdio(false);
-  
-  #ifndef ONLINE_JUDGE
-  freopen("in","r",stdin);
-  freopen("out","w",stdout);
-  #endif
-
-  scanf("%d" , &n);
-  for(int i = 0 ; i < n-1 ; i++){
-  	scanf("%d %d" , &a, &b);
-  	adj[a].pb(b);
-  	adj[b].pb(a);
-  }
   discovery.pb(-1);
   dfs(1, -1); 
   return 0;

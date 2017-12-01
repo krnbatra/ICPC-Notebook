@@ -1,3 +1,4 @@
+/* aho_corasick */
 const int K = 20;
 struct vertex {
   vertex *next[K], *go[K], *link, *p;

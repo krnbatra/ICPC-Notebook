@@ -1,13 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* trie */
 const int MAXN = 26;
-
 struct Trie{
     int words;
     int prefixes;
@@ -19,9 +11,7 @@ struct Trie{
             edges[i] = NULL;
     }
 };
-
 Trie root;
-
 void addWord(Trie* vertex, int idx, string &word){
     if(idx == word.size()){
         vertex->prefixes++;
@@ -33,7 +23,6 @@ void addWord(Trie* vertex, int idx, string &word){
         vertex->edges[word[idx]-'a'] = new Trie;
     addWord(vertex->edges[word[idx]-'a'], idx+1, word);
 }
-
 int countWords(Trie* vertex, int idx, string &word){
     if(idx == word.size())
         return vertex->words;
@@ -41,7 +30,6 @@ int countWords(Trie* vertex, int idx, string &word){
         return 0;
     return countWords(vertex->edges[word[idx]-'a'], idx+1, word);
 }
-
 int countPrefixes(Trie* vertex, int idx, string &word){
     if(idx == word.size())
         return vertex->prefixes;
@@ -49,20 +37,16 @@ int countPrefixes(Trie* vertex, int idx, string &word){
         return 0;
     return countPrefixes(vertex->edges[word[idx]-'a'], idx+1, word);
 }
-
 void init(){
     root.words = 0;
     root.prefixes = 0;
     for(int i = 0;i < MAXN; i++)
         root.edges[i] = NULL;
 }
-
 int main(){
-    io;
     init();
     string str = "karan";
     string str2 = "ka";
     addWord(&root, 0, str);
     cout << countPrefixes(&root, 0, str2) << endl;
-    return 0;
 }

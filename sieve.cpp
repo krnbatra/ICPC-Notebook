@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-typedef long long ll;
-using namespace std;
-
+/* sieve */
 const int MAXN = 1e6+5;
 int isPrime[MAXN];	//isPrime[i] = 0 indicates i is prime. 
 void sieve(){
@@ -16,9 +13,4 @@ void sieve(){
 			}
 		}
 	}
-}
-
-int main(){
-	
-	return 0;
 }

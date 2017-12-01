@@ -1,9 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-/*
-	Time Complexity - O(sqrtN)
-*/
+/* ETF single query */
 int eulerPhi(int n){
 	int res = n;
 	for(int i = 2; i*i <= n; i++){
@@ -20,9 +15,4 @@ int eulerPhi(int n){
 		res/=n;
 	}
 	return res;
-}
-
-int main(){
-	
-	return 0;
 }

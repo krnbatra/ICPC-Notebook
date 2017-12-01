@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* 2D sparse table */
 const int MAXN = 1e3+5;
 const int MAXM = 1e3+5;
 const int LGN = log2(MAXN) + 1;
@@ -41,21 +34,4 @@ int query(int x1, int y1, int x2, int y2){
 	int minn1 = min(sparse_table[kx][x1][ky][y1], sparse_table[kx][x1][ky][y2-(1 << ky)+1]);
 	int minn2 = min(sparse_table[kx][x2-(1 << kx)+1][ky][y1], sparse_table[kx][x2-(1 << kx)+1][ky][y2-(1 << ky)+1]);
 	return min(minn1, minn2);
-}
-
-int main(){
-	io;
-	cin >> n >> m;
-	for(int i = 0; i < n; i++)
-		for(int j = 0; j < m; j++)
-			cin >> matrix[i][j];
-	preprocess();
-	int q;
-	cin >> q;
-	while(q--){
-		int x1, y1, x2, y2;
-		cin >> x1 >> y1 >> x2 >> y2;
-		cout << query(x1, y1, x2, y2) << endl;
-	}
-	return 0;
 }

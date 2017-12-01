@@ -1,3 +1,4 @@
+/* set use */
 struct oper{
         int l, r, k;
     };
@@ -38,9 +39,5 @@ struct oper{
 
             //erase from set
             iset.erase(make_pair(cost, operindex))
-
-
-
-
 /*Prob:M queries given :assign a cost ci for all i between li and ri(both inclusive) ,1<=li<=ri<=N.Find min ci for all i.
 N log M complexity.*/

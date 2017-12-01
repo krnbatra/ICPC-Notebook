@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* trie bit */
 const int MAXN = 1e5+5;
 
 struct node{
@@ -68,15 +61,7 @@ void query(node* curr, int n, int level, int &ans){
 		}
 	}
 }
-
 int main(){
-    io;
-	int n;
-	cin >> n;
-	int arr[n];
-	for(int i = 0; i < n; i++)
-		cin >> arr[i];
-	int ans = INT_MIN;
 	init();
 	for(int i = 0; i < n; i++){
 		int val = 0;

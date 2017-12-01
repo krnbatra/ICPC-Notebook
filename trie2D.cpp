@@ -1,10 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* trie 2d */
 const int MAXN = 500005;
 int sz = 0;
 
@@ -46,11 +40,8 @@ bool searchWord(string prefix){
     }
     return end1[v] > 0;
 }
-
 int main(){
-    io;
     memset(trie, -1, sizeof trie);
     insert("abc");
     cout << end1[3] << endl;
-    return 0;
 }

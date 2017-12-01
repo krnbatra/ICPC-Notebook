@@ -1,3 +1,4 @@
+/* mod exp */
 long long int power(long long int e, long long int n)
 {
   long long x=1,p=e;

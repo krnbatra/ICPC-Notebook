@@ -1,12 +1,4 @@
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <set>
-#include <stack>
-#include <queue>
-#include <deque>
-#include <map>
+/* skiplist */
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>

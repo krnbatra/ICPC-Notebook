@@ -1,14 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define M_PI                3.14159265358979323846
-
+/* dijkstra */
 const int MAXN = 1e5+5;
-
 vector<pair<int, int> > adj[MAXN];   //{dist, adjacent_vertex}
 ll dist[MAXN];
 bool vis[MAXN];
@@ -43,11 +34,4 @@ void dijkstra(int st, int finish){
             }
         }
     }
-}
-
-int main(){
-    io;
-    init();
-    
-    return 0;
 }

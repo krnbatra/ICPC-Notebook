@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* segment tree */
 const int MAXN = 1e5+5; 
 int n;
 int tree[4*MAXN];
@@ -68,10 +61,4 @@ void update(int node, int start, int end, int l, int r, int value){
 	update(left, start, mid, l, r, value);
 	update(right, mid + 1, end, l, r, value);
 	tree[node] = tree[left] + tree[right]; 
-}
-
-int main(){
-	io;
-	
-	return 0;
 }

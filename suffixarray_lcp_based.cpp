@@ -1,3 +1,4 @@
+/* suffix array lcp based */
 const int maxn = 200010, maxlg = 18; // maxlg = ceil(log_2(maxn))
 struct SA {
   pair<pair<int,int>, int> L[maxn]; // O(n * log n) space

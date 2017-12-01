@@ -1,12 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define M_PI                3.14159265358979323846
-
+/* scc */
 const int MAXN = 1e3+5;
 vector<int> adj[MAXN], adjReverse[MAXN];
 int components[MAXN];   // components[i] indicates to which component vertex i belong to.
@@ -56,8 +48,6 @@ void scc(){
 }
 
 int main(){
-    io;
-    cin >> n >> m;
     init();
     for(int i = 0; i < m; i++){
         int a, b;
@@ -80,5 +70,4 @@ int main(){
             }
         }
     }
-    return 0;
 }

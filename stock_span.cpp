@@ -1,7 +1,4 @@
-#include <iostream>
-#include <stack>
-using namespace std;
- 
+/* stock span */
 // A stack based efficient method to calculate stock span values
 void calculateSpan(int price[], int n, int S[])
 {

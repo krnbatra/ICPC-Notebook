@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-typedef long long ll;
-using namespace std;
-
+/* ETF Sieve */
 const int MAXN = (int)1e6+5;
 ll phi[MAXN+1];
 
@@ -17,10 +14,4 @@ void ETF_sieve(){
 			}
 		}
 	}
-}
-
-int main(){
-	ETF_sieve();
-	cout << phi[8] <<endl;
-	return 0;
 }

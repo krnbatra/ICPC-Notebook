@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long int ll ;
-
+/* Centroid Decomposition */
 #define pb     push_back
 #define mp     make_pair
 #define all(v) v.begin() , v.end()
@@ -125,8 +122,5 @@ int main(int argc, char const *argv[])
   }
   pre();
   decompose(1, -1);
-
-  
-  
   return 0;
 }  

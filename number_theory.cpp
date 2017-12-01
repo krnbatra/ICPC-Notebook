@@ -1,3 +1,4 @@
+/* number theory */
 ll multiply_mod(ll a, ll b, ll mod) {
   if (b == 0) return 0;
   if (b & 1) return ((ull)multiply_mod(a, b-1, mod) + a) % mod;

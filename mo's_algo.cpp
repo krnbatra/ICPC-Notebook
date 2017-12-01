@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* Mo */
 const int N = 2e5+1;
 const int M = 1e6+5;
 const int SQN = sqrt(N)+1;
@@ -36,10 +29,6 @@ struct query{
 
 query Q[N];
 int main(){
-	io;
-	cin >> n >> q;
-	for(int i = 1;i <= n; i++)
-		cin >> arr[i];
 	for(int i = 1;i <= q; i++){
 		int l, r;
 		cin >> l >> r;

@@ -1,11 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
-typedef long long ll;
- 
-#define MOD                 1000000007LL
-#define EPS                 1e-9
-#define io                  ios_base::sync_with_stdio(false);cin.tie(NULL);
-
+/* DSU */
 int n;
 int parent[MAXN];
 int size[MAXN];
@@ -43,11 +36,4 @@ void union1(int a, int b){
 		parent[root_b] = root_a;
 		size[root_a] += size[root_b];
 	}
-}
-
-int main(){
-	io;
-	init();
-	
-	return 0;
 }
